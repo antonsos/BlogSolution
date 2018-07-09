@@ -1,0 +1,35 @@
+<% include ./partials/header %>
+  <div class="ui main text container">
+    <h1 class="ui huge heacer">RESTfull Blog App</h1>
+    <% posts.forEach(function(item) { %>
+      <div class="ui main text container segment">
+        <div class="ui top attached clearfix">
+          <div class="clearfix">
+            <div class="image--width">
+              <img class="ui rounded image image" src="<%= item.image %>" alt="blog image">
+            </div>
+            <div class="content">
+              <h2 class="header">
+                <%= item.name %>
+              </h2>
+              <div class="meta">
+                <span>
+                  <%= item.created.toDateString() %>
+                </span>
+              </div>
+              <p class="description">
+                <%- item.body.substring(0, 100) %>...
+              </p>
+            </div>
+            <p class="btn-box">
+              <a href="/blogs/<%= item._id %>" class="ui primary button btn-info">
+                More info
+                <i class="right chevron icon"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    <%})%>
+  </div>
+  <% include ./partials/footer %>

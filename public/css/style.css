@@ -1,0 +1,60 @@
+* {
+  word-wrap: break-word;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+i.icon.code {
+  font-size: 1.5rem;
+}
+
+.image {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.image--width {
+  display: inline-block;
+  float: left;
+  width: 220px;
+}
+
+img {
+  width: 100%;
+}
+
+.content {
+  float: right;
+  width: 420px;
+  padding: 10px;
+}
+
+.form-delete {
+  display: inline-block;
+}
+
+.form-delete--right {
+  float: right;
+}
+
+.ui.primary.button.btn-info {
+  display: inline-block;
+  margin: 20px 0 0;
+}
+
+.btn-box {
+  clear: both;
+}
+
+.ui.main.text.container.segment {
+  margin-bottom: 30px;
+}
+
+.description {
+  width: 100%;
+  padding: 10px;
+}
